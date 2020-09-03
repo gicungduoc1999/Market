@@ -1,0 +1,273 @@
+package org.apache.jsp;
+
+import javax.servlet.*;
+import javax.servlet.http.*;
+import javax.servlet.jsp.*;
+
+public final class Checkout_jsp extends org.apache.jasper.runtime.HttpJspBase
+    implements org.apache.jasper.runtime.JspSourceDependent {
+
+  private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
+
+  private static java.util.List<String> _jspx_dependants;
+
+  private org.glassfish.jsp.api.ResourceInjector _jspx_resourceInjector;
+
+  public java.util.List<String> getDependants() {
+    return _jspx_dependants;
+  }
+
+  public void _jspService(HttpServletRequest request, HttpServletResponse response)
+        throws java.io.IOException, ServletException {
+
+    PageContext pageContext = null;
+    HttpSession session = null;
+    ServletContext application = null;
+    ServletConfig config = null;
+    JspWriter out = null;
+    Object page = this;
+    JspWriter _jspx_out = null;
+    PageContext _jspx_page_context = null;
+
+    try {
+      response.setContentType("text/html;charset=UTF-8");
+      pageContext = _jspxFactory.getPageContext(this, request, response,
+      			null, true, 8192, true);
+      _jspx_page_context = pageContext;
+      application = pageContext.getServletContext();
+      config = pageContext.getServletConfig();
+      session = pageContext.getSession();
+      out = pageContext.getOut();
+      _jspx_out = out;
+      _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
+
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("<!DOCTYPE html>\n");
+      out.write("<html>\n");
+      out.write("    <head>\n");
+      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
+      out.write("        <link href=\"Css/Checkout.css\" rel=\"stylesheet\" type=\"text/css\"/>\n");
+      out.write("        <title>Checkout</title>\n");
+      out.write("    </head>\n");
+      out.write("    <body>\n");
+      out.write("        <div class=\"all\">\n");
+      out.write("            <div class=\"header\">\n");
+      out.write("                <!-----header---->\n");
+      out.write("                <div class=\"text\">\n");
+      out.write("                    <h1>Handmade by Catherine</h1>\n");
+      out.write("                    <p>Welcome to My Online Store </p>\n");
+      out.write("                </div>\n");
+      out.write("            </div>\n");
+      out.write("            <!----menu=---->\n");
+      out.write("            <div class=\"menu\">\n");
+      out.write("                <a href=\"home\">Online Store</a>\n");
+      out.write("                <a href=\"About.jsp\">About </a>\n");
+      out.write("                <a href=\"Contact.jsp\">Contact</a>\n");
+      out.write("            </div>\n");
+      out.write("            <!-----body---->\n");
+      out.write("            <div class=\"body\">\n");
+      out.write("                <h1>Checkout</h1>\n");
+      out.write("                <br>\n");
+      out.write("                <h2>Shipping address</h2>\n");
+      out.write("                <form action=\"checkout\" onsubmit=\"return  checForm()\">\n");
+      out.write("\n");
+      out.write("                    <!---bodyContent--->\n");
+      out.write("                    <div class=\"bodyContent\">\n");
+      out.write("                        <div class=\"left\">\n");
+      out.write("                            <p>Name *</p>\n");
+      out.write("                            <input required=\"\" name=\"name\" id=\"name\" class=\"input1\" type=\"text\" >\n");
+      out.write("                            <p>Company</p>\n");
+      out.write("                            <input name=\"company\" id=\"company\" class=\"input1\" type=\"text\" >\n");
+      out.write("                            <p>Address line 1 *</p>\n");
+      out.write("                            <input required=\"\" name=\"address1\" id=\"address1\" class=\"input1\" type=\"text\" >\n");
+      out.write("                            <p>Address line 2 </p>\n");
+      out.write("                            <input name=\"address2\" id=\"address2\" class=\"input1\" type=\"text\" >\n");
+      out.write("                            <!----content2---->\n");
+      out.write("                            <div class=\"content2\">\n");
+      out.write("                                <!---left1--->\n");
+      out.write("                                <div class=\"left1\">\n");
+      out.write("                                    <p>Zip *</p>\n");
+      out.write("                                    <input required=\"\" name=\"zip\" id=\"zip\" class=\"input2\" type=\"text\" >\n");
+      out.write("                                    <p>State *</p>\n");
+      out.write("                                    <select required=\"\" name=\"state\" id=\"state\">\n");
+      out.write("                                        <option>1</option>\n");
+      out.write("                                        <option>2</option>\n");
+      out.write("                                        <option>3</option>\n");
+      out.write("                                    </select>\n");
+      out.write("                                    <p>Phone</p>\n");
+      out.write("                                    <input name=\"phone\" id=\"phone\" class=\"input2\" type=\"number\" >\n");
+      out.write("                                </div>\n");
+      out.write("                                <!----right1--->\n");
+      out.write("                                <div class=\"right1\">\n");
+      out.write("                                    <p>City *</p>\n");
+      out.write("                                    <input required=\"\" name=\"city\" id=\"city\" class=\"input2\" type=\"text\" >\n");
+      out.write("                                    <p>Country</p>\n");
+      out.write("                                    <p>United States</p>\n");
+      out.write("                                    <p style=\"margin-top:  28px;\">Email *</p>\n");
+      out.write("                                    <input name=\"email\" id=\"email\"  class=\"input2\" type=\"text\" >\n");
+      out.write("                                </div>\n");
+      out.write("                            </div>\n");
+      out.write("                        </div>\n");
+      out.write("                        <!----right--->\n");
+      out.write("                        <div class=\"right\">\n");
+      out.write("                            <p>Conment</p>\n");
+      out.write("                            <input name=\"comment\" id=\"comment\" type=\"text\" >\n");
+      out.write("                            <p class=\"required\">* Required</p>\n");
+      out.write("                        </div>\n");
+      out.write("                    </div>\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("                    <!----line--->\n");
+      out.write("                    <div class=\"line\">\n");
+      out.write("                    </div>\n");
+      out.write("                    <h1>Billing address</h1>\n");
+      out.write("                    <input id=\"same\" name=\"bill\" type=\"radio\" onclick=\"showInfomation()\" >Same as shipping address\n");
+      out.write("                    <input id=\"diff\" name=\"bill\" type=\"radio\" >Different\n");
+      out.write("                    </div>\n");
+      out.write("                    <!---footer button---->\n");
+      out.write("                    <div class=\"footerButton\">\n");
+      out.write("                        <button><a href=\"Basket.jsp\" >Go back</a></button>\n");
+      out.write("                        <button type=\"submit\"><a>Continue</a></button>\n");
+      out.write("                    </div>\n");
+      out.write("                </form>\n");
+      out.write("                <!----footer---->\n");
+      out.write("                <div class=\"lineFooter\">\n");
+      out.write("                </div>\n");
+      out.write("                <div class=\"footer\">\n");
+      out.write("                    <p>This website was created with Simple site</p>\n");
+      out.write("                    <a href=\"\">Get your own FREE website.Click here!</a>\n");
+      out.write("                </div>\n");
+      out.write("            </div>\n");
+      out.write("    </body>\n");
+      out.write("    <script>\n");
+      out.write("        //set value \n");
+      out.write("        document.getElementById('name').value = '");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${sessionScope.order.customer.name}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("';\n");
+      out.write("        document.getElementById('company').value = '");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${sessionScope.order.customer.company}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("';\n");
+      out.write("        document.getElementById('address1').value = '");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${sessionScope.order.customer.address1}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("';\n");
+      out.write("        document.getElementById('address2').value = '");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${sessionScope.order.customer.address2}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("';\n");
+      out.write("        document.getElementById('zip').value = '");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${sessionScope.order.customer.zip}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("';\n");
+      out.write("        document.getElementById('state').value = '");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${sessionScope.order.customer.state}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("';\n");
+      out.write("        document.getElementById('phone').value = '");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${sessionScope.order.customer.phone}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("';\n");
+      out.write("        document.getElementById('city').value = '");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${sessionScope.order.customer.city}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("';\n");
+      out.write("        document.getElementById('email').value = '");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${sessionScope.order.customer.email}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("';\n");
+      out.write("        document.getElementById('comment').value = '");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${sessionScope.order.customer.comment}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("';\n");
+      out.write("\n");
+      out.write("        //set text null\n");
+      out.write("        document.getElementById('diff').onclick = function () {\n");
+      out.write("            document.getElementById('name').value = '';\n");
+      out.write("            document.getElementById('company').value = '';\n");
+      out.write("            document.getElementById('address1').value = '';\n");
+      out.write("            document.getElementById('address2').value = '';\n");
+      out.write("            document.getElementById('zip').value = '';\n");
+      out.write("            document.getElementById('state').value = '';\n");
+      out.write("            document.getElementById('phone').value = '';\n");
+      out.write("            document.getElementById('city').value = '';\n");
+      out.write("            document.getElementById('email').value = '';\n");
+      out.write("            document.getElementById('comment').value = '';\n");
+      out.write("\n");
+      out.write("        };\n");
+      out.write("        //set value if same\n");
+      out.write("        function showInfomation() {\n");
+      out.write("            //set value in sesion\n");
+      out.write("            document.getElementById('name').value = '");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${sessionScope.order.customer.name}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("';\n");
+      out.write("            document.getElementById('company').value = '");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${sessionScope.order.customer.company}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("';\n");
+      out.write("            document.getElementById('address1').value = '");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${sessionScope.order.customer.address1}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("';\n");
+      out.write("            document.getElementById('address2').value = '");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${sessionScope.order.customer.address2}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("';\n");
+      out.write("            document.getElementById('zip').value = '");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${sessionScope.order.customer.zip}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("';\n");
+      out.write("            document.getElementById('state').value = '");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${sessionScope.order.customer.state}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("';\n");
+      out.write("            document.getElementById('phone').value = '");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${sessionScope.order.customer.phone}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("';\n");
+      out.write("            document.getElementById('city').value = '");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${sessionScope.order.customer.city}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("';\n");
+      out.write("            document.getElementById('email').value = '");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${sessionScope.order.customer.email}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("';\n");
+      out.write("            document.getElementById('comment').value = '");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${sessionScope.order.customer.comment}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("';\n");
+      out.write("\n");
+      out.write("        }\n");
+      out.write("        //check number phone \n");
+      out.write("        function checForm() {\n");
+      out.write("            //check email\n");
+      out.write("            var email = document.getElementById('email').value;\n");
+      out.write("\n");
+      out.write("            var regex = /[a-z,0-9]+@[a-z]+.[a-z]+/g;\n");
+      out.write("            \n");
+      out.write("\n");
+      out.write("            var result = email.match(regex);\n");
+      out.write("            if (result == null) {\n");
+      out.write("               alert(\"Please Enter format email\");\n");
+      out.write("               return false;\n");
+      out.write("\n");
+      out.write("            }\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("            var phone = document.getElementById('phone').value;\n");
+      out.write("            if (phone == '') {\n");
+      out.write("                  alert(\"please enter phone\");\n");
+      out.write("                return false;\n");
+      out.write("            }\n");
+      out.write("\n");
+      out.write("        }\n");
+      out.write("        //check mess when input information\n");
+      out.write("        var mess = '");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${mess}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("'\n");
+      out.write("        if (mess != '')\n");
+      out.write("        {\n");
+      out.write("            alert(mess);\n");
+      out.write("        }\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("    </script>\n");
+      out.write("</html>\n");
+    } catch (Throwable t) {
+      if (!(t instanceof SkipPageException)){
+        out = _jspx_out;
+        if (out != null && out.getBufferSize() != 0)
+          out.clearBuffer();
+        if (_jspx_page_context != null) _jspx_page_context.handlePageException(t);
+        else throw new ServletException(t);
+      }
+    } finally {
+      _jspxFactory.releasePageContext(_jspx_page_context);
+    }
+  }
+}

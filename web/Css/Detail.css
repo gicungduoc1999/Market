@@ -1,0 +1,193 @@
+body{
+    background-color: #FF3333 ;
+}
+.all{
+    background-color: #FFCCCC;
+    margin: 40px auto;
+    height: auto;
+    width: 70%;
+    border-radius: 20px;
+}
+/*header*/
+.header{
+    border-top-left-radius: 20px;
+    border-top-right-radius:  20px;
+    background-color: #FF0000;
+    height: 130px;
+    width: 100%;
+}
+.text{
+    margin-left: 20px;
+    color: white;
+}
+.text h1{
+    padding-top: 30px;
+}
+.text p {
+    margin-top: -20px;
+}
+/*menu*/
+.menu{
+    height: 30px;
+    background-color: #8B2323;
+}
+.menu a {
+    line-height: 30px;
+    color: white;
+    text-decoration: none;
+    padding:  20px;
+}
+.body{
+    display: flex ;
+    width: 100% ;
+    height: auto ;
+}
+/*left*/
+.left{
+    width: 76%;
+    height: auto;
+    margin-left: 20px;
+}
+.product{
+    width: 100%;
+    height: auto ;
+    display: flex ;
+
+}
+.product img {
+    height: 40% ;
+    width: 40%;
+    border-radius: 20px;
+}
+.productDetail{
+    height: auto;
+    margin-top: -20px;
+    margin-left: 20px;
+}
+.productDetail p{
+    font-size:20px;
+}
+.productDetail input{
+    width: 40px;
+    height: 30px;
+    text-align: center ;
+    border-radius: 3px;
+    border: none ;
+}
+.productDetail select{
+    width: 80px;
+    height: 30px;
+    border-radius: 3px;
+    border: none ;
+}
+.productDetail h3{
+    font-weight:bold;
+    font-size:25px;
+}
+.productDetail button{
+    margin-top: 5px;
+    background-color:#8B2323; 
+    border: none;
+    border-radius:  20px;
+    width: 130px;
+    height: 30px;
+    color: white;
+}
+.productDetail button a {
+    color: white;
+    text-decoration: none;
+}
+/*right*/
+.right{
+    width:  20%;
+    height: auto;
+}
+/*basket*/
+.basket{
+    margin-top: 50px;
+    width: 180px;
+    height: 60px;
+    border-style:  groove;
+    border-color: #FF9999;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 20px;
+}
+.text{
+    margin-right: 60px;
+}
+.basket a {
+    color: black;
+}
+.basket button{
+    margin-top: 5px;
+    background-color:#8B2323; 
+    border: none;
+    border-radius:  20px;
+    width: 160px;
+    height: 30px;
+}
+.basket button a {
+    color: white;
+    text-decoration: none;
+}
+/*share*/
+.share{
+    margin-top: 40px;
+    width: 180px;
+    height: 150px;
+    border-style:  groove;
+    border-color: #FF9999;
+    border-radius: 20px;
+
+    line-height: 20px;
+}
+.share h3{
+    margin-left: 10px;
+}
+.share img{
+    vertical-align: middle;
+}
+.share a {
+    display: inline-block;
+    color: black;
+}
+/*ads*/
+.ads{
+    margin-top: 40px;
+    width: 180px;
+    height: 150px;
+    border-style:  groove;
+    border-color: #FF9999;
+    border-radius: 20px;
+    line-height: 20px;
+    text-align: center;
+}
+.ads button{
+    margin-top: 5px;
+    background-color:#8B2323; 
+    border: none;
+    border-radius:  20px;
+    width: 160px;
+    height: 30px;
+}
+.ads button a {
+    color: white;
+    text-decoration: none;
+}
+/*footer*/
+.lineFooter{
+    line-height: 200px;
+    border: 1px dotted #666600;
+    width: 95%;
+    margin: 30px auto;
+}
+.footer{
+    background-color: none;
+    width: 100%;
+    height: 100px;
+    margin-left: 20px;
+}
+.footer a {
+    color: black;
+}

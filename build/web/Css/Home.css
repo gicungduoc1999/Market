@@ -1,0 +1,200 @@
+body{
+    background-color: #FF3333 ;
+}
+.all{
+    background-color: #FFCCCC;
+    margin: 40px auto;
+    height: auto;
+    width: 70%;
+    border-radius: 20px;
+}
+/*header*/
+.header{
+    border-top-left-radius: 20px;
+    border-top-right-radius:  20px;
+    background-color: #FF0000;
+    height: 130px;
+    width: 100%;
+}
+.text{
+    margin-left: 20px;
+    color: white;
+}
+.text h1{
+    padding-top: 30px;
+}
+.text p {
+    margin-top: -20px;
+}
+/*menu*/
+.menu{
+    height: 30px;
+    background-color: #8B2323;
+}
+.menu a {
+    line-height: 30px;
+    color: white;
+    text-decoration: none;
+    padding:  20px;
+}
+.body{
+    display: flex ;
+    width: 100% ;
+    height: auto ;
+}
+/*left*/
+.left{
+    width: 76%;
+    height: auto;
+    margin-left: 20px;
+}
+.productMenu{
+    display: grid;
+    grid-template-columns: 240px 240px 240px  ;
+    grid-template-rows: 350px 350px 350px   ;
+    grid-row-gap: 40px;
+}
+.product{
+    width: 80%;
+    padding: 10px;
+    height: 1000px
+}
+.product img{
+    width: 100% ;
+    height: 19%;
+    border-radius: 20px;
+}
+.product a {
+    color: black;
+}
+.product p{
+    color: #990000;
+}
+.product select{
+    width: 70px;
+}
+.product button {
+    background-color:#8B2323; 
+    border: none;
+    border-radius:  20px;
+    width: 140px;
+    height: 30px;
+    color: white;
+}
+.product button a {
+    text-decoration: none;
+    color: white ;
+}
+/*page*/
+.page{
+    height: 60px;
+    margin-top: 80px; 
+    text-align: center;
+}
+.page button{
+    margin-top: 5px;
+    background-color:#8B2323; 
+    border: none;
+    width: 50px;
+    height: 30px;
+    margin: 4px 5px;
+}
+.page button a{
+    color: white;
+    text-decoration: none;
+}
+/*right*/
+.right{
+    width:  20%;
+    height: 100px;
+}
+/*basket*/
+.basket{
+    margin-top: 50px;
+    width: 180px;
+    height: 60px;
+    border-style:  groove;
+    border-color: #FF9999;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 20px;
+}
+.text{
+    margin-right: 20px;
+}
+.basket a {
+    color: black;
+}
+.basket button{
+    margin-top: 5px;
+    background-color:#8B2323; 
+    border: none;
+    border-radius:  20px;
+    width: 160px;
+    height: 30px;
+}
+.basket button a {
+    color: white;
+    text-decoration: none;
+}
+/*share*/
+.share{
+    margin-top: 40px;
+    width: 180px;
+    height: 150px;
+    border-style:  groove;
+    border-color: #FF9999;
+    border-radius: 20px;
+
+    line-height: 20px;
+}
+.share h3{
+    margin-left: 10px;
+}
+.share img{
+    vertical-align: middle;
+}
+.share a {
+    display: inline-block;
+    color: black;
+}
+/*ads*/
+.ads{
+    margin-top: 40px;
+    width: 180px;
+    height: 150px;
+    border-style:  groove;
+    border-color: #FF9999;
+    border-radius: 20px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.ads button{
+    margin-top: 5px;
+    background-color:#8B2323; 
+    border: none;
+    border-radius:  20px;
+    width: 160px;
+    height: 30px;
+}
+.ads button a {
+    color: white;
+    text-decoration: none;
+}
+/*footer*/
+.lineFooter{
+    line-height: 200px;
+    border: 1px dotted #666600;
+    width: 95%;
+    margin: 30px auto;
+}
+.footer{
+    background-color: none;
+    width: 100%;
+    height: 100px;
+    margin-left: 20px;
+}
+.footer a {
+    color: black;
+}
